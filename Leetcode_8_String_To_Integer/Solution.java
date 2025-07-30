@@ -7,7 +7,7 @@ class Solution {
         // 2. Ignore any leading whitespace (" ").
         s = s.stripLeading();
 
-        // 3. Initialize signedness
+        // 3. Initialize the signedness
         int sign = 1;
 
         // 4. Check if the first character is '-' or '+', then reassign to variable "sign" and ignore the first character
@@ -20,7 +20,7 @@ class Solution {
         int i = 0;
         int n = s.length();
 
-        // 5. Loop with condition characters in string as digits
+        // 5. Loop if characters in string as digits
         while (i < n && Character.isDigit(s.charAt(i))) {
             int digit = s.charAt(i) - '0';
 
