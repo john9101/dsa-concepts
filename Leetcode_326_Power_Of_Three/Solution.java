@@ -5,7 +5,7 @@ class Solution {
         else if(n == 1) return true;
         else if(n % 3 != 0) return false;
 
-        // 2. Recursively check if n is a power of three
+        // 2. Recursive processing
         return isPowerOfThree(n / 3);
     }
 }
