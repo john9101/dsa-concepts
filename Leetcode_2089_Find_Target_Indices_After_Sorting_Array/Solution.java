@@ -1,6 +1,6 @@
 class Solution {
     public List<Integer> targetIndices(int[] nums, int target) {
-        // 1. Initialize the count array with a maximum of 100 elements.
+        // 1. Initialize the count array with a maximum of 100 elements
         int[] count = new int[101];
 
         // 2. Count the number of occurrences of each element in the count array
@@ -18,8 +18,8 @@ class Solution {
 
         // 5. Calculate the starting position of the target
         int s = 0;
-        for(int val = 1; val < target; val++){
-            s += count[val];
+        for(int v = 1; v < target; v++){
+            s += count[v];
         }
 
         // 6. Add target positions to the result list
