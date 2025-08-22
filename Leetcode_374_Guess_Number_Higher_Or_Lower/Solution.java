@@ -17,7 +17,9 @@ public class Solution extends GuessGame {
             int mid = low + (high - low) / 2;
             int g = guess(mid);
 
-            // 3. If the guess is 0, return the average value. If the guess is -1, decrease the high value. If the guess is 1, increase the low value.
+            // 3. If the guess is 0, return the average value. 
+            // If the guess is -1, decrease the high value. 
+            // If the guess is 1, increase the low value.
             if (g == 0) {
                 return mid;
             } else if (g == -1) {
